@@ -23,5 +23,9 @@ Its contents consists of:
 3. Check the integrity of the messages sent between client and server.
 
 # References
-https://user3141592.medium.com/what-is-ssl-and-how-does-it-work-a5465d19b494
-https://darutk.medium.com/illustrated-x-509-certificate-84aece2c5c2e
+1. https://user3141592.medium.com/what-is-ssl-and-how-does-it-work-a5465d19b494
+2. https://darutk.medium.com/illustrated-x-509-certificate-84aece2c5c2e
+3. https://teivah.medium.com/ssl-tls-main-concepts-c368d411c687
+4. https://medium.com/swlh/demystifying-ssl-communication-5a8ea2aebcb8
+5. https://medium.com/@mehulgala77/ssl-in-a-nutshell-a316de1b1247
+6. https://medium.com/@mehulgala77/a-closer-look-at-digital-certificates-9ce5a4c56f75
