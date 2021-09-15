@@ -1,5 +1,8 @@
 # Web-Application-Security
 &pWYX&DFU9fkyx5Q?k9eN8mRZ&FR.($g
+SecurityServiceDB
+admin
+eQ123456
 # Everything You Ever Wanted to Know About Secure HTML Forms
 
 #	CAPCHA service to Protect DDOS attacks
