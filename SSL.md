@@ -14,7 +14,7 @@ SSL uses these digital signatures to authenticate the identity of web servers.
 Its contents consists of:
 1. Who the SSL certificate is issued to (aka the subject).
 2. The expiration date of the SSL certificate
-3. The SSL certificate’s public key, which will be used for encryption.
+3. The SSL certificate’s private key, which will be used for encryption.
 4. The digital signature of the certificate authority (more on this later) who issued the certificate.
 
 # The SSL protocol uses SSL certificates to
