@@ -1,4 +1,6 @@
 
+https://blog.lukaspradel.com/dockerizing-a-tomcat-postgresql-java-web-application/
+https://devops4solutions.com/deploy-a-tomcat-application-using-docker-compose/
 # What is Digital Signature?
 
 Hash value of a message when encrypted with the private key of a person is his digital signature on that e-Document.
