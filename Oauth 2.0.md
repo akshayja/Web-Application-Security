@@ -22,3 +22,6 @@ https://www.varonis.com/blog/what-is-oauth/
 
 ## An Introduction to OAuth 2
 https://www.digitalocean.com/community/tutorials/an-introduction-to-oauth-2
+
+## What the Heck is OAuth?
+https://developer.okta.com/blog/2017/06/21/what-the-heck-is-oauth
