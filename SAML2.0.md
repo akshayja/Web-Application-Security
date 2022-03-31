@@ -51,3 +51,25 @@ As an example, assume a user requested a protected video content from an applica
 
 Each SAML binding specifically mention whether it support for RelayState or not , if supported binding also specify how to encode the RelayState value using underlying transport protocol and message format.
 
+ Exchange of information(metadata) between IDP and SP.
+------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Which information does SP need from IDP ?
+
+	- EntityId						  -> For validating whether we received correct assertion issuer or not.
+	- Single Sign On Service Endpoint -> Identity provider url where we should 
+	- Signing Certificates 			  -> For Validation of signature of SAML Assertion
+	
+(IDP Metadata)
+------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Which information does IDP need from SP ?
+
+	- EntityId 							 -> Unique identifier for relying party
+	- Attribute Consume Service Endpoint -> Endpoint where assertion should be sent
+	- Single Logout Service Endpoint	 -> Endpoint where Logout response should be sent
+	- Signing Certificates 				 -> Required for signing assertion
+	- Encryption Certificates			 -> Required for encrypting assertion
+
+
+(SP Metadata)
+------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ 
