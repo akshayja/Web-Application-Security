@@ -1,4 +1,4 @@
-Users point of view
+**Users point of view**
 
 How can we store passwords securely in case any one wants to save it?
 
@@ -16,7 +16,7 @@ Different techniques used by attackers to make financial frauds?
 
 How to register fraud complaint?
  
-Developers point of view 
+**Developers point of view**
 
 What are different ways by which we can address security vulnerabilities? 
 
