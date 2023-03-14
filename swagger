@@ -1,0 +1,66 @@
+package com.swagger;
+
+import java.util.Collections;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.context.annotation.Bean;
+
+import springfox.documentation.builders.PathSelectors;
+import springfox.documentation.builders.RequestHandlerSelectors;
+import springfox.documentation.service.ApiInfo;
+import springfox.documentation.spi.DocumentationType;
+import springfox.documentation.spring.web.plugins.Docket;
+import springfox.documentation.swagger2.annotations.EnableSwagger2;
+
+@SpringBootApplication
+@EnableSwagger2
+public class SwaggerExampleApplication {
+
+	public static void main(String[] args) {
+		SpringApplication.run(SwaggerExampleApplication.class, args);
+	}
+	
+	@Bean
+	public Docket swaggerConfiguration()
+	{
+		//Return a Docket instance
+		return new Docket(DocumentationType.SWAGGER_2)
+	     .select()
+	     .paths(PathSelectors.ant("/*"))
+	     .apis(RequestHandlerSelectors.basePackage("com.swagger"))
+	     .build()
+	     .apiInfo(apiDetails());
+		
+		
+	}
+ 
+	private ApiInfo apiDetails()
+	{
+		return new ApiInfo(
+				"Address book API", 
+				"Api Documentation",
+				"1.0",
+				"urn:tos",
+		          "Apache 2.0", 
+		          "http://www.apache.org/licenses/LICENSE-2.0",
+				    Collections.emptyList());
+				
+	 }
+	
+
+}
+
+//http://localhost:8080/swagger-ui.html
+<!-- https://mvnrepository.com/artifact/io.springfox/springfox-swagger2 -->
+<dependency>
+    <groupId>io.springfox</groupId>
+    <artifactId>springfox-swagger2</artifactId>
+    <version>2.9.2</version>
+</dependency>
+<!-- https://mvnrepository.com/artifact/io.springfox/springfox-swagger-ui -->
+<dependency>
+    <groupId>io.springfox</groupId>
+    <artifactId>springfox-swagger-ui</artifactId>
+    <version>2.9.2</version>
+</dependency>
